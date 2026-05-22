@@ -25,7 +25,7 @@ export default function Gallery({ images, name }) {
       <div className={styles.thumbs} role="tablist" aria-label="Gallery">
         {images.map((src, i) => (
           <button
-            key={src}
+            key={`${src}-${i}`}
             type="button"
             role="tab"
             aria-selected={i === active}

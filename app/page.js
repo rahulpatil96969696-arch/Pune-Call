@@ -9,7 +9,7 @@ import styles from "./page.module.css";
 
 export const metadata = buildMetadata({
   title:
-    "Pune Call Girl | Independent Pune Escorts | Premium Escort Service Pune",
+    "Pune Call Girl",
   description:
     "Book premium Pune call girls and independent Pune escorts. Discreet VIP escort service Pune — girlfriend experience, romantic dates, and hotel visits. WhatsApp booking 24/7.",
   path: "/",

@@ -36,16 +36,15 @@ npm run dev:webpack
 
 Open http://localhost:3000
 
-## Add real photos
+## Profile photos
 
-Replace placeholder JPEGs in:
+Each companion uses one image from `public/`:
 
 ```
-public/profiles/[slug]/cover.jpg
-public/profiles/[slug]/1.jpg
-public/profiles/[slug]/2.jpg
-public/profiles/[slug]/3.jpg
+public/image1.png … public/image10.png
 ```
+
+Mapped in `lib/profiles.js` (`PROFILE_IMAGES`). Profile gallery shows the same image in all 4 slots until you add more photos per person.
 
 ## Deploy
 
