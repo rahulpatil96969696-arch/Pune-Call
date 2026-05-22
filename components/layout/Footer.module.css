@@ -1,0 +1,79 @@
+.footer {
+  margin-top: clamp(3rem, 8vw, 5rem);
+  padding: clamp(2.5rem, 6vw, 4rem) 0 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 720px) {
+  .grid {
+    grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  }
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.seo {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--fg-dim);
+  margin: 0 0 1.25rem;
+  max-width: 28rem;
+}
+
+.heading {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 0.5rem;
+}
+
+.links a {
+  font-size: 0.88rem;
+  color: var(--fg-dim);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--fg);
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--fg-faint);
+  border-left: 2px solid var(--line);
+  padding-left: 1rem;
+  margin: 0 0 1.5rem;
+  max-width: 52rem;
+}
+
+.copy {
+  font-size: 0.72rem;
+  color: var(--fg-faint);
+  margin: 0;
+}

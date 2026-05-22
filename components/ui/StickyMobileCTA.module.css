@@ -1,0 +1,27 @@
+.bar {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+  padding: 0.75rem 1rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 15, 0.98) 60%,
+    rgba(10, 10, 15, 0)
+  );
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--line);
+}
+
+.btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .bar {
+    display: none;
+  }
+}

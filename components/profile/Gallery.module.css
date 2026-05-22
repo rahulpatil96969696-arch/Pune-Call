@@ -1,0 +1,76 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.mainWrap {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.main {
+  object-fit: cover;
+  animation: fade 0.4s ease;
+}
+
+.mainOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 15, 0.35) 0%,
+    transparent 40%
+  );
+  pointer-events: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+}
+
+.thumbBtn {
+  position: relative;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: pointer;
+  aspect-ratio: 1;
+  transition: border-color 0.25s ease, transform 0.25s ease, opacity 0.25s ease,
+    box-shadow 0.25s ease;
+  opacity: 0.55;
+}
+
+.thumbBtn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.thumbActive {
+  opacity: 1;
+  border-color: var(--accent);
+  box-shadow: 0 0 20px -6px var(--accent-glow);
+}
+
+.thumbImg {
+  object-fit: cover;
+}

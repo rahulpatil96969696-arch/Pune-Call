@@ -1,0 +1,108 @@
+.info {
+  padding-top: 0.25rem;
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(212, 160, 86, 0.4);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  margin-bottom: 1rem;
+  background: rgba(212, 160, 86, 0.08);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.4rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--fg-dim);
+  margin: 0 0 0.35rem;
+}
+
+.availability {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #5ee89a;
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: var(--accent);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.tags {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tags li {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--fg-dim);
+}
+
+.waBtn {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.block {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.block h2 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin: 0 0 0.65rem;
+  color: var(--fg);
+}
+
+.block p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--fg-dim);
+}
+
+.block ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--fg-dim);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+.block li {
+  margin-bottom: 0.35rem;
+}

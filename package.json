@@ -1,0 +1,22 @@
+{
+  "name": "profile-gallery",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "dev:clean": "node scripts/reset-dev.js && next dev",
+    "dev:webpack": "node scripts/reset-dev.js && next dev --webpack",
+    "build": "next build",
+    "build:clean": "node scripts/reset-dev.js && next build",
+    "start": "next start",
+    "clean": "node scripts/reset-dev.js"
+  },
+  "dependencies": {
+    "next": "^16.2.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  }
+}

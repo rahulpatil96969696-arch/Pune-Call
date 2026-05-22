@@ -1,0 +1,16 @@
+.page {
+  padding-bottom: 2rem;
+}
+
+.section {
+  padding: clamp(2rem, 6vw, 4rem) 0 0;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+}

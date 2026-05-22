@@ -1,0 +1,59 @@
+.section {
+  padding: clamp(2rem, 6vw, 4rem) 0 clamp(4rem, 10vw, 6rem);
+}
+
+.box {
+  position: relative;
+  text-align: center;
+  padding: clamp(2rem, 6vw, 3.5rem) clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: 24px;
+  border: 1px solid rgba(212, 160, 86, 0.25);
+  background: linear-gradient(
+    160deg,
+    rgba(212, 160, 86, 0.08) 0%,
+    var(--surface) 45%,
+    var(--bg) 100%
+  );
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(212, 160, 86, 0.12),
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.kicker {
+  position: relative;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+.title {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4.5vw, 2.25rem);
+  margin: 0 0 1rem;
+}
+
+.text {
+  position: relative;
+  max-width: 32rem;
+  margin: 0 auto 1.75rem;
+  color: var(--fg-dim);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.box :global(a) {
+  position: relative;
+}
